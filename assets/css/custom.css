@@ -1,0 +1,65 @@
+.cart_inner .table tbody tr.out_button_area .checkout_btn_inner .primary-btn.btn-empty-cart{
+    background: orangered;
+}
+.nav.nav-shop{
+    display: inline-block;
+ }
+.confirmation-card .nice-select{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.error{
+    color: red;
+}
+.alert-wrapper{
+    position: relative;
+}
+.alert-holder{
+    width: 350px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+form.user_form .user-image{
+    display: block;
+    margin: 0 auto;
+    max-height: 225px;
+    max-width: 225px;
+    cursor: pointer;
+}
+form.user_form .image-holder{
+    text-align: center;
+}
+form.user_form .image-holder>span{
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+form.user_form .image-holder:hover{
+    opacity: 0.9;
+}
+form.user_form .image-holder .edit-image {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background: #ffc107;
+}
+form.user_form .image-holder:hover .edit-image{
+    opacity: 1;
+}
+form.user_form input[name="image"]{
+    display: none;
+}
+.product_count i{
+    font-size: 20px;
+}
+.cart_inner .table tbody tr td .product_count .reduced{
+    margin-left: 5px;
+}
+.add-category input{
+    margin-bottom: 20px;
+    width: 100%;
+}
