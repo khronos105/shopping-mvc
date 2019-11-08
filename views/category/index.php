@@ -36,7 +36,7 @@
                                     <td><?=$cat->id;?></td>
                                     <td><?=$cat->nombre;?></td>
                                     <td>
-                                        <form action="<?=base_url?>category/delete" method="POST">
+                                        <form action="<?=BASE_URL?>category/delete" method="POST">
                                             <input type="hidden" name="cat_id" value="<?=$cat->id?>">
                                             <button type="submit" class="btn">Delete</button>
                                         </form>
@@ -45,7 +45,7 @@
                             <?php endwhile; ?>
                             <tr>
                                 <td colspan="3">
-                                    <a href="<?=base_url?>category/create" class="button button-login w-100">Add new category</a>
+                                    <a href="<?=BASE_URL?>category/create" class="button button-login w-100">Add new category</a>
                                 </td>
                             </tr>
                         </tbody>

@@ -15,7 +15,7 @@ require 'helpers/flash.php';
                             <h4><?= $billingDataMessage ?></h4>
                         <?php } ?>
 
-                        <form class="row contact_form" action="<?=base_url.'user/resetPass'?>" method="POST" novalidate="novalidate">
+                        <form class="row contact_form" action="<?=BASE_URL.'user/resetPass'?>" method="POST" novalidate="novalidate">
                             <div class="col-md-12 form-group">
                                 <input type="password" class="form-control" id="oldPassword" name="oldPassword" placeholder="Old Password">
                             </div>

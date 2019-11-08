@@ -15,7 +15,7 @@ require 'helpers/flash.php';
                         <?php if(isset($billingDataMessage)){ ?>
                             <h4><?= $billingDataMessage ?></h4>
                         <?php } ?>
-                        <form class="row user_form" action="<?=base_url.'user/updateUserData'?>" method="POST" novalidate="novalidate" enctype="multipart/form-data">
+                        <form class="row user_form" action="<?=BASE_URL.'user/updateUserData'?>" method="POST" novalidate="novalidate" enctype="multipart/form-data">
                             <div class="offset-3 col-md-6">
                                 <div class="form-group p_star">
                                     <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" value="<?=$user->fname?>">

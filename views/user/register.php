@@ -19,7 +19,7 @@
             <div class="col-lg-6">
                 <div class="login_form_inner register_form_inner">
                     <h3>Create an account</h3>
-                    <form class="row login_form" action="<?=base_url?>user/registerAction" id="register_form" method="POST">
+                    <form class="row login_form" action="<?=BASE_URL?>user/registerAction" id="register_form" method="POST">
                         <div class="col-md-12 form-group">
                             <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'">
                         </div>

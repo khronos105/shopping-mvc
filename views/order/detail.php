@@ -77,7 +77,7 @@
                 <div class="col-md-6 col-xl-4 mb-4 mb-xl-0">
                     <div class="confirmation-card">
                         <h3 class="billing-title">Change order status</h3>
-                        <form action="<?=base_url?>order/status" method="POST">
+                        <form action="<?=BASE_URL?>order/status" method="POST">
                             <input type="hidden" value="<?=$order->id?>" name="order_id"/>
                             <div class="">
                                 <select name="order_status">

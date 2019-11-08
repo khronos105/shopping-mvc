@@ -56,7 +56,7 @@ class UserController{
 				$save = $user->register();
 				if($save){
 					$_SESSION['register'] = "complete";
-                    header("Location:".base_url.'user/login');
+                    header("Location:".BASE_URL.'user/login');
                     exit();
 				}else{
 					$_SESSION['register'] = "failed";
@@ -67,7 +67,7 @@ class UserController{
 		}else{
 			$_SESSION['register'] = "failed";
 		}
-		header("Location:".base_url.'user/register');
+		header("Location:".BASE_URL.'user/register');
 	}
 
     public function updateUserData(){
@@ -114,7 +114,7 @@ class UserController{
                     move_uploaded_file($image['tmp_name'], 'uploads/users/'.$imageTitle);
                 }else{
                     $msg->error('El formato de la imagen es incorrecto');
-                    header("Location:".base_url."user/index");
+                    header("Location:".BASE_URL."user/index");
                     exit();
                 }
 
@@ -132,7 +132,7 @@ class UserController{
         }else{
             $msg->error('Data not sent correctly');
         }
-        header("Location:".base_url."user/index");
+        header("Location:".BASE_URL."user/index");
         exit();
     }
 
@@ -175,7 +175,7 @@ class UserController{
         }else{
             $msg->error('Data not sent correctly');
         }
-        header("Location:".base_url."user/billing");
+        header("Location:".BASE_URL."user/billing");
     }
 
     public function resetPass(){
@@ -211,7 +211,7 @@ class UserController{
         }else{
             $msg->error('Data not sent correctly');
         }
-        header("Location:".base_url."user/reset_pass");
+        header("Location:".BASE_URL."user/reset_pass");
     }
 	
 	public function loginAction(){
@@ -231,7 +231,7 @@ class UserController{
 					$_SESSION['admin'] = true;
 				}
 
-                header("Location:".base_url."user/index");
+                header("Location:".BASE_URL."user/index");
 				exit();
 				
 			}else{
@@ -239,7 +239,7 @@ class UserController{
 			}
 		
 		}
-		header("Location:".base_url."user/login");
+		header("Location:".BASE_URL."user/login");
 		exit();
 	}
 	
@@ -249,7 +249,7 @@ class UserController{
         // Finalmente, destruir la sesión.
         session_destroy();
 		
-		header("Location:".base_url);
+		header("Location:".BASE_URL);
 	}
 	
 } // fin clase

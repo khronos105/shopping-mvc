@@ -1,5 +1,5 @@
 <?php
-define("base_url", "/");
-define("controller_default", "productController");
-define("action_default", "index");
+define("BASE_URL", "/");
+define("DEFAULT_CONTROLLER", "productController");
+define("DEFAULT_ACTION", "index");
 

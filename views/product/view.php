@@ -11,9 +11,9 @@
 					<div class="owl-carousel owl-theme s_Product_carousel">
 						<div class="single-prd-item">
 							<?php if ($product->imagen != null): ?>
-								<img class="img-fluid" src="<?= base_url ?>uploads/products/<?= $product->imagen ?>" />
+								<img class="img-fluid" src="<?= BASE_URL ?>uploads/products/<?= $product->imagen ?>" />
 							<?php else: ?>
-								<img class="img-fluid" src="<?= base_url ?>assets/img/logo.png" />
+								<img class="img-fluid" src="<?= BASE_URL ?>assets/img/logo.png" />
 							<?php endif; ?>
 						</div>
 					</div>
@@ -29,7 +29,7 @@
 						</ul>
 						<p><?= $product->descripcion ?></p>
 						<div class="product_count">
-							<a class="button primary-btn" href="<?=base_url?>carrito/add&id=<?=$product->id?>">Add to Cart</a>               
+							<a class="button primary-btn" href="<?=BASE_URL?>carrito/add&id=<?=$product->id?>">Add to Cart</a>
 						</div>
 					</div>
 				</div>

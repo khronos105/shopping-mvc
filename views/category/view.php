@@ -33,10 +33,10 @@
 						<div class="col-md-6 col-lg-4">
 							<div class="card text-center card-product">
 								<div class="card-product__img">
-									<img class="card-img" src="<?=base_url?>uploads/products/<?=$product->imagen?>" alt="">
+									<img class="card-img" src="<?=BASE_URL?>uploads/products/<?=$product->imagen?>" alt="">
 									<ul class="card-product__imgOverlay">
 										<li>
-											<a href="<?=base_url?>carrito/add&id=<?=$product->id?>">	
+											<a href="<?=BASE_URL?>carrito/add&id=<?=$product->id?>">
 												<button><i class="ti-shopping-cart"></i></button>
 											</a>
 										</li>
@@ -44,7 +44,7 @@
 								</div>
 								<div class="card-body">
 									<p><?=$objectCategory->nombre?></p>
-									<h4 class="card-product__title"><a href="<?=base_url?>product/view&id=<?=$product->id?>"><?=$product->nombre?></a></h4>
+									<h4 class="card-product__title"><a href="<?=BASE_URL?>product/view&id=<?=$product->id?>"><?=$product->nombre?></a></h4>
 									<p class="card-product__price"><?=$product->precio?>$</p>
 								</div>
 							</div>

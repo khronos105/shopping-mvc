@@ -36,7 +36,7 @@
               <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
               <?php while($cat = $categorias->fetch_object()): ?>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?=base_url?>category/view&id=<?=$cat->id?>"><?=$cat->nombre?></a>
+                  <a class="nav-link" href="<?=BASE_URL?>category/view&id=<?=$cat->id?>"><?=$cat->nombre?></a>
                 </li>
               <?php endwhile; ?>
             </ul>

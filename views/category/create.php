@@ -22,7 +22,7 @@
         <div class="row mb-5">
             <div class="offset-4 col-md-8 col-xl-4 mb-4 mb-xl-0">
                 <div class="confirmation-card">
-                    <form class="add-category" action="<?=base_url?>category/add" method="POST">
+                    <form class="add-category" action="<?=BASE_URL?>category/add" method="POST">
                         <div>
                             <input type="text" name="title" placeholder="Title" required/>
                         </div>

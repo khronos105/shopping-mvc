@@ -1,12 +1,12 @@
 <?php if(isset($edit) && isset($pro) && is_object($pro)): ?>
     <?php
         $title = "Edit product";
-        $url_action = base_url."product/save&id=".$pro->id;
+        $url_action = BASE_URL."product/save&id=".$pro->id;
     ?>
 <?php else: ?>
 	<?php
         $title = "Add new product";
-        $url_action = base_url."product/save";
+        $url_action = BASE_URL."product/save";
     ?>
 <?php endif; ?>
 <section class="blog-banner-area" id="category">
@@ -33,7 +33,7 @@
                     <div class="owl-carousel owl-theme s_Product_carousel">
                         <div class="single-prd-item">
                             <?php if(isset($pro) && is_object($pro) && !empty($pro->imagen)): ?>
-                                <img src="<?=base_url?>uploads/products/<?=$pro->imagen?>" class="thumb"/>
+                                <img src="<?=BASE_URL?>uploads/products/<?=$pro->imagen?>" class="thumb"/>
                             <?php endif; ?>
                         </div>
                     </div>

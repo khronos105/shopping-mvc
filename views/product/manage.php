@@ -26,9 +26,9 @@
                                     <div class="media">
                                         <div class="d-flex">
                                             <?php if ($product->imagen != null): ?>
-                                                <img src="<?= base_url ?>uploads/products/<?= $product->imagen ?>"/>
+                                                <img src="<?= BASE_URL ?>uploads/products/<?= $product->imagen ?>"/>
                                             <?php else: ?>
-                                                <img src="<?= base_url ?>assets/img/logo.png"/>
+                                                <img src="<?= BASE_URL ?>assets/img/logo.png"/>
                                             <?php endif; ?>
                                         </div>
                                     </div>
@@ -43,8 +43,8 @@
                                     <h5><?= $product->stock ?></h5>
                                 </td>
                                 <td>
-                                    <a href="<?=base_url?>product/edit&id=<?=$product->id?>" class="button button-gestion">Edit</a>
-                                    <a href="<?=base_url?>product/delete&id=<?=$product->id?>" class="button button-gestion button-red">Delete</a>
+                                    <a href="<?=BASE_URL?>product/edit&id=<?=$product->id?>" class="button button-gestion">Edit</a>
+                                    <a href="<?=BASE_URL?>product/delete&id=<?=$product->id?>" class="button button-gestion button-red">Delete</a>
                                 </td>
                             </tr>
                         <?php endwhile; ?>
@@ -53,7 +53,7 @@
                     <?php else: ?>
                         <h2>There are not products</h2>
                         <div class="text-center">
-                            <a href="<?=base_url?>product/add" class="button button-small">
+                            <a href="<?=BASE_URL?>product/add" class="button button-small">
                                 Add new product
                             </a>
                         </div>

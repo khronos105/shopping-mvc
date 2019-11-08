@@ -12,7 +12,7 @@ require 'helpers/countries.php';
                     <div class="col-lg-8">
                         <h3>Billing Details</h3>
                         <?php $user = $_SESSION['identity']; ?>
-                        <form class="row contact_form" action="<?=base_url.'order/add'?>" method="POST" novalidate="novalidate">
+                        <form class="row contact_form" action="<?=BASE_URL.'order/add'?>" method="POST" novalidate="novalidate">
                             <div class="col-md-6 form-group p_star">
                                 <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" value="<?=$user->fname?>">
                             </div>

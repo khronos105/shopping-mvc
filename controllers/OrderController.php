@@ -57,19 +57,19 @@ class orderController{
 				
 				if($save && $save_linea){
 					$_SESSION['order'] = "complete";
-                    header("Location:".base_url.'order/confirmado');
+                    header("Location:".BASE_URL.'order/confirmado');
                     exit();
 				}else {
                     $_SESSION['order'] = "Failed to store order in DB";
                 }
 			}else{
 				$_SESSION['billing'] = "Please complete your billing details";
-                header("Location:".base_url. "order/billing");
+                header("Location:".BASE_URL. "order/billing");
                 exit();
 			}
 		}else{
 			// Redigir al index
-			header("Location:".base_url);
+			header("Location:".BASE_URL);
 		}
 	}
 	
@@ -93,7 +93,7 @@ class orderController{
             if(isset($_SESSION['order'])){
                 $orderComplete = $_SESSION['order'];
             }else{
-                header("Location:".base_url);
+                header("Location:".BASE_URL);
                 exit();
             }
 
@@ -145,7 +145,7 @@ class orderController{
 			
 			require_once 'views/order/detail.php';
 		}else{
-			header('Location:'.base_url.'order/my_orders');
+			header('Location:'.BASE_URL.'order/my_orders');
 		}
 	}
 	
@@ -162,9 +162,9 @@ class orderController{
 			$order->setStatus($order_status);
 			$order->update();
 			
-			header("Location:".base_url.'order/detail&id='.$order_id);
+			header("Location:".BASE_URL.'order/detail&id='.$order_id);
 		}else{
-			header("Location:".base_url);
+			header("Location:".BASE_URL);
 		}
 	}
 	

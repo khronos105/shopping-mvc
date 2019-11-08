@@ -45,7 +45,7 @@ class categoryController{
             $categoria->setTitle($_POST['title']);
             $save = $categoria->save();
         }
-        header("Location:".base_url."category/index");
+        header("Location:".BASE_URL."category/index");
     }
 
     public function delete(){
@@ -61,7 +61,7 @@ class categoryController{
                 $msg->warning('The category with ID ' . $cat_id . ' and all the products that contains was deleted');
             }
         }
-        header("Location:".base_url."category/index");
+        header("Location:".BASE_URL."category/index");
     }
 	
 }

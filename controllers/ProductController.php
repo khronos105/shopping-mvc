@@ -115,7 +115,7 @@ class productController{
 		}else{
 			$_SESSION['producto'] = "failed";
 		}
-		header('Location:'.base_url.'product/manage');
+		header('Location:'.BASE_URL.'product/manage');
 	}
 	
 	public function edit(){
@@ -132,7 +132,7 @@ class productController{
 			require_once 'views/product/add.php';
 			
 		}else{
-			header('Location:'.base_url.'product/manage');
+			header('Location:'.BASE_URL.'product/manage');
 		}
 	}
 	
@@ -157,7 +157,7 @@ class productController{
 			$_SESSION['delete'] = 'failed';
 		}
 		
-		header('Location:'.base_url.'product/manage');
+		header('Location:'.BASE_URL.'product/manage');
 	}
 	
 }

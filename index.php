@@ -23,7 +23,7 @@ require_once 'views/layout/header.php';
         $nombre_controlador = $_GET['controller'].'Controller';
 
     }elseif(!isset($_GET['controller']) && !isset($_GET['action'])){
-        $nombre_controlador = controller_default;
+        $nombre_controlador = DEFAULT_CONTROLLER;
 
     }else{
         show_error();
@@ -37,7 +37,7 @@ require_once 'views/layout/header.php';
             $action = $_GET['action'];
             $controlador->$action();
         }elseif(!isset($_GET['controller']) && !isset($_GET['action'])){
-            $action_default = action_default;
+            $action_default = DEFAULT_ACTION;
             $controlador->$action_default();
         }else{
             show_error();

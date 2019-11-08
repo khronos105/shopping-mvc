@@ -24,9 +24,9 @@
                                     <div class="media">
                                         <div class="d-flex">
                                             <?php if ($producto->imagen != null): ?>
-                                                <img src="<?= base_url ?>uploads/products/<?= $producto->imagen ?>"/>
+                                                <img src="<?= BASE_URL ?>uploads/products/<?= $producto->imagen ?>"/>
                                             <?php else: ?>
-                                                <img src="<?= base_url ?>assets/img/logo.png"/>
+                                                <img src="<?= BASE_URL ?>assets/img/logo.png"/>
                                             <?php endif; ?>
                                         </div>
                                         <div class="media-body">
@@ -42,9 +42,9 @@
                                         <input type="text" name="qty" id="sst" maxlength="12" value="<?= $elemento['unidades'] ?>" title="Quantity:"
                                                class="input-text qty">
 
-                                        <a href="<?= base_url ?>carrito/up&index=<?= $indice ?>" class="increase items-count"><i
+                                        <a href="<?= BASE_URL ?>carrito/up&index=<?= $indice ?>" class="increase items-count"><i
                                                     class="ti-arrow-circle-up"></i></a>
-                                        <a href="<?= base_url ?>carrito/down&index=<?= $indice ?>" class="reduced items-count"><i
+                                        <a href="<?= BASE_URL ?>carrito/down&index=<?= $indice ?>" class="reduced items-count"><i
                                                     class="ti-arrow-circle-down"></i></a>
                                     </div>
                                 </td>
@@ -82,9 +82,9 @@
                                 <div class="checkout_btn_inner d-flex align-items-center">
                                     <a class="gray_btn" href="/">Continue Shopping</a>
                                     <div class="delete-carrito">
-                                        <a href="<?= base_url ?>carrito/delete_all" class="primary-btn ml-2 btn-empty-cart">Empty cart</a>
+                                        <a href="<?= BASE_URL ?>carrito/delete_all" class="primary-btn ml-2 btn-empty-cart">Empty cart</a>
                                     </div>
-                                    <a class="primary-btn ml-2" href="<?= base_url ?>order/billing">Proceed to checkout</a>
+                                    <a class="primary-btn ml-2" href="<?= BASE_URL ?>order/billing">Proceed to checkout</a>
                                 </div>
                             </td>
                         </tr>

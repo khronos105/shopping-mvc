@@ -15,7 +15,7 @@ require 'helpers/flash.php';
                         <?php if(isset($billingDataMessage)){ ?>
                             <h4><?= $billingDataMessage ?></h4>
                         <?php } ?>
-                        <form class="row contact_form" action="<?=base_url.'user/updateBilling'?>" method="POST" novalidate="novalidate">
+                        <form class="row contact_form" action="<?=BASE_URL.'user/updateBilling'?>" method="POST" novalidate="novalidate">
                             <div class="col-md-6 form-group p_star">
                                 <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone number" value="<?=$user->phone?>" >
                             </div>

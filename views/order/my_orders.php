@@ -39,7 +39,7 @@
                     <?php while ($order = $orders->fetch_object()): ?>
                         <tr>
                             <td>
-                                <h6><a href="<?= base_url ?>order/detail&id=<?= $order->id ?>"><?= $order->id ?></a></h6>
+                                <h6><a href="<?= BASE_URL ?>order/detail&id=<?= $order->id ?>"><?= $order->id ?></a></h6>
                             </td>
                             <td>
                                 <h6><?= $order->cost ?> $</h6>
